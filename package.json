@@ -2,14 +2,16 @@
   "name": "custom-server-express",
   "version": "1.0.0",
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "next",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js"
+    "start": "cross-env NODE_ENV=production node server.js",
+    "ngrok": "ngrok http 3000"
   },
   "dependencies": {
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "next": "latest",
+    "ngrok": "^4.0.1",
     "nodemon": "^2.0.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
